@@ -1,7 +1,7 @@
 let usuario = prompt("Ingrese el nombre de Usuario: (EntregaCoder)");
 const contraseniaAutorizada = 1234;
 
-//Función bienvenida (Nombre Usuario y Contraseña)
+//Función Bienvenida (Usuario y Contraseña)
 function bienvenida() {
     if (usuario === "EntregaCoder") {
         for (let i = 0; i < 2; i++);
@@ -35,7 +35,7 @@ const yerba = new Productos ("Yerba", 127);
 // Array
 const arrayProductos = [];
 
-//Pusheo productos
+//Pusheo Productos
 arrayProductos.push(pan);
 arrayProductos.push(azucar);
 arrayProductos.push(arroz);
@@ -44,7 +44,7 @@ arrayProductos.push(yerba);
 
 console.log(arrayProductos);
 
-// Función menú 
+// Función Menú 
 function menu() {
     let menu = parseInt(prompt("Que desea hacer? \n 1) Comprar Productos \n 2) Buscar Productos \n 3) Productos por menos de $90 \n 4) Salir")); 
     switch(menu){
@@ -65,8 +65,7 @@ function menu() {
     }
 }
 
-//Función buscar productos
-
+//Función Buscar Productos
 function buscarProducto(){
     let buscar = prompt("Ingrese el nombre de un producto: ");
     let producto = arrayProductos.find(producto => producto.nombre === buscar);
@@ -78,20 +77,19 @@ function buscarProducto(){
     console.log(producto);
 }
 
-//Función presupuesto
-
+//Función Productos Baratos
 function productosBaratos(){
     const arrayProductosBaratos = arrayProductos.filter(producto => producto.precio < 90);
     console.log("Productos por menos de $90");
     console.log(arrayProductosBaratos);
 }
 
-//Función salir
+//Función Salir
 function salir() {
     alert("Que tenga un buen día!");
 }
 
-//Función menú de productos
+//Función Menú de Productos
 function menuProductos() {
    let opciones = prompt("Seleccione una opción con su valor correspondiente: \n 1) Pan \n 2) Azucar \n 3) Arroz \n 4) Gaseosa \n 5) Yerba");
    switch(opciones){
